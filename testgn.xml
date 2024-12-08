@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--BEFORESUITE-->
+<suite name="TestSuite" thread-count="2" parallel="tests">
+    <!--    BEFORETEST -->
+    <test name="ChromeTest">
+        <parameter name="browserType" value="chrome"/>
+        <!--        BEFORECLASS-->
+        <classes>
+            <class name="ge.tbc.testautomation.SelenideTests2">
+                <!--                BEFOREMETHOD -->
+                <methods>
+                    <include name="complexSendKeys"/>
+                </methods>
+                <!--                AFTERMETHOD-->
+            </class>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="ge.tbc.testautomation.SelenideTests2">
+                <methods>
+                    <include name="complexSendKeys"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+        <!--AFTERSUITE-->
