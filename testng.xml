@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Form Parameterization Suite">
+    <test name="ParameterTest1">
+        <parameter name="firstName" value="John"/>
+        <parameter name="lastName" value="Doe"/>
+        <parameter name="gender" value="Male"/>
+        <parameter name="mobileNumber" value="1234567890"/>
+        <classes>
+            <class name="AlternativeParametrizations"/>
+        </classes>
+    </test>
+    <test name="ParameterTest2">
+        <parameter name="firstName" value="Jane"/>
+        <parameter name="lastName" value="Smith"/>
+        <parameter name="gender" value="Female"/>
+        <parameter name="mobileNumber" value="0987654321"/>
+        <classes>
+            <class name="AlternativeParametrizations"/>
+        </classes>
+    </test>
+    <test name="ParameterTest3">
+        <parameter name="firstName" value="Regina"/>
+        <parameter name="lastName" value="Palange"/>
+        <parameter name="gender" value="Female"/>
+        <parameter name="mobileNumber" value="2229993338"/>
+        <classes>
+            <class name="AlternativeParametrizations"/>
+        </classes>
+    </test>
+</suite>
